@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusFDE | Forward Deployed Engineering Services for Enterprise</title>
+  <meta name="description" content="Deploy elite embedded Forward Deployed Engineers (FDE) to integrate complex AI platforms, custom data pipelines, and enterprise software 10x faster.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Animated Elements -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container announcement-inner">
+      <span class="badge-new">NEW</span>
+      <span class="announcement-text">Introducing <strong>FDE-AI Squads</strong>: Production-ready RAG & LLM integration in under 14 days.</span>
+      <a href="#calculator" class="announcement-link">Calculate ROI <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="navbar">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-terminal"></i>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">NEXUS<span class="gradient-text">//</span>FDE</span>
+          <span class="brand-tag">FORWARD DEPLOYED</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+          <li><a href="#lifecycle" class="nav-link">Deployment Model</a></li>
+          <li><a href="#calculator" class="nav-link">ROI Calculator</a></li>
+          <li><a href="#comparison" class="nav-link">Why FDE</a></li>
+          <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+          <li><a href="#pricing" class="nav-link">Engagement Tiers</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="status-indicator" title="System Operational">
+          <span class="status-dot"></span>
+          <span class="status-text">SLA ACTIVE</span>
+        </div>
+        <button class="btn btn-primary open-modal-btn" data-modal="auditModal">
+          <span>Schedule Audit</span>
+          <i class="fa-solid fa-bolt"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>EMBEDDED ENGINEERING FOR ENTERPRISE INTEGRATION</span>
+          </div>
+
+          <h1 class="hero-title">
+            Deploy Elite Embedded Engineers. <br>
+            <span class="gradient-text">Ship Complex Integrations 10x Faster.</span>
+          </h1>
+
+          <p class="hero-description">
+            NexusFDE embeds principal-level software engineers directly into client engineering teams to architect custom AI pipelines, solve complex SaaS integrations, and guarantee zero-downtime deployment.
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn btn-glow open-modal-btn" data-modal="auditModal">
+              <span>Deploy an FDE Squad</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="#terminal-demo" class="btn btn-secondary">
+              <i class="fa-solid fa-play"></i>
+              <span>Watch Live Terminal</span>
+            </a>
+          </div>
+
+          <div class="trust-metrics">
+            <div class="trust-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>SOC2 Type II & HIPAA Certified</span>
+            </div>
+            <div class="trust-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Air-Gapped & On-Prem Support</span>
+            </div>
+            <div class="trust-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Zero Vendor Lock-in</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal & Interactive Visualizer -->
+        <div class="hero-visual">
+          <div class="terminal-window" id="terminal-demo">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">
+                <i class="fa-solid fa-server"></i> nexus-fde-cli v3.4.2 — bash
+              </div>
+              <div class="terminal-action">
+                <span class="live-pill">LIVE EXECUTION</span>
+              </div>
+            </div>
+
+            <div class="terminal-body" id="terminalBody">
+              <!-- Animated Lines injected via JavaScript -->
+            </div>
+
+            <div class="terminal-footer">
+              <span class="prompt-user">fde@nexus-cluster:~$</span>
+              <span class="command-input" id="terminalInput">nexus init --squad enterprise-ai --mode embedded</span>
+              <span class="cursor">_</span>
+            </div>
+          </div>
+
+          <!-- Quick Interactive Control Card -->
+          <div class="hero-stats-card">
+            <div class="stat-mini">
+              <div class="stat-mini-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+              <div>
+                <div class="stat-value">14 Days</div>
+                <div class="stat-label">Avg. Deployment Lead Time</div>
+              </div>
+            </div>
+            <div class="stat-mini">
+              <div class="stat-mini-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div>
+                <div class="stat-value">99.99%</div>
+                <div class="stat-label">Telemetry Pipeline Uptime</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGOS BAR -->
+    <section class="logos-section">
+      <div class="container">
+        <p class="logos-title">TRUSTED BY LEADING ENTERPRISE ENGINEERING TEAMS</p>
+        <div class="logos-grid">
+          <div class="logo-badge"><i class="fa-solid fa-microchip"></i> CYBERNETIX</div>
+          <div class="logo-badge"><i class="fa-solid fa-cubes"></i> DATAFLOW INC</div>
+          <div class="logo-badge"><i class="fa-solid fa-vault"></i> FINSEC GLOBAL</div>
+          <div class="logo-badge"><i class="fa-solid fa-cloud-bolt"></i> AETHER CLOUD</div>
+          <div class="logo-badge"><i class="fa-solid fa-dna"></i> BIOMED AI</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT COUNTER STATS -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="14">0</div>
+            <div class="stat-unit">Days</div>
+            <p class="stat-desc">Average Time-to-Production for complex custom integrations.</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="42">0</div>
+            <div class="stat-unit">$M+</div>
+            <p class="stat-desc">Client ROI generated in eliminated dev cycles and efficiency.</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="150">0</div>
+            <div class="stat-unit">+</div>
+            <p class="stat-desc">Production AI models and data pipelines forward-deployed.</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-unit">%</div>
+            <p class="stat-desc">Codebase transfer and complete team autonomy guarantee.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES / SERVICES GRID -->
+    <section class="capabilities-section" id="capabilities">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">FORWARD DEPLOYMENT CAPABILITIES</span>
+          <h2 class="section-title">Built for Complex Enterprise Codebases</h2>
+          <p class="section-lead">
+            Traditional consultants present slide decks. Forward Deployed Engineers write production-grade code directly inside your repositories.
+          </p>
+
+          <!-- Filter Tabs -->
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Services</button>
+            <button class="filter-btn" data-filter="ai">AI & Vector Pipelines</button>
+            <button class="filter-btn" data-filter="integration">Enterprise Integrations</button>
+            <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+            <button class="filter-btn" data-filter="security">Security & Compliance</button>
+          </div>
+        </div>
+
+        <div class="cards-grid" id="capabilitiesGrid">
+          <!-- Card 1 -->
+          <div class="capability-card" data-category="ai">
+            <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3 class="card-title">Embedded AI & RAG Pipeline Engineering</h3>
+            <p class="card-text">
+              Integration of private LLMs, vector search, hybrid retrieval, and custom RAG agents into legacy databases with enterprise guardrails.
+            </p>
+            <ul class="card-tags">
+              <li>LangChain</li>
+              <li>Pinecone</li>
+              <li>Llama 3</li>
+              <li>vLLM</li>
+            </ul>
+            <a href="#auditModal" class="card-link open-modal-btn" data-modal="auditModal">Request Spec <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="capability-card" data-category="integration">
+            <div class="card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3 class="card-title">High-Throughput API & Middleware Mesh</h3>
+            <p class="card-text">
+              Building low-latency event-driven microservices, GraphQL gateways, and custom connectors across Salesforce, SAP, and custom internal APIs.
+            </p>
+            <ul class="card-tags">
+              <li>Kafka</li>
+              <li>gRPC</li>
+              <li>GraphQL</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <a href="#auditModal" class="card-link open-modal-btn" data-modal="auditModal">Request Spec <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="capability-card" data-category="cloud">
+            <div class="card-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+            <h3 class="card-title">Cloud Infrastructure & Kubernetes Scaling</h3>
+            <p class="card-text">
+              Automated Infrastructure-as-Code deployments, multi-region failover, auto-scaling Kubernetes clusters, and cloud cost optimization.
+            </p>
+            <ul class="card-tags">
+              <li>Terraform</li>
+              <li>Kubernetes</li>
+              <li>AWS / GCP</li>
+              <li>Helm</li>
+            </ul>
+            <a href="#auditModal" class="card-link open-modal-btn" data-modal="auditModal">Request Spec <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="capability-card" data-category="security">
+            <div class="card-icon"><i class="fa-solid fa-shield-cat"></i></div>
+            <h3 class="card-title">Zero-Trust & Air-Gapped Deployment</h3>
+            <p class="card-text">
+              Deploying sensitive applications into isolated, air-gapped environment networks with strict SOC2 Type II, HIPAA, and GDPR compliance.
+            </p>
+            <ul class="card-tags">
+              <li>Vault</li>
+              <li>mTLS</li>
+              <li>Air-gapped</li>
+              <li>OpenID</li>
+            </ul>
+            <a href="#auditModal" class="card-link open-modal-btn" data-modal="auditModal">Request Spec <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="capability-card" data-category="integration">
+            <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+            <h3 class="card-title">Legacy System Modernization & ETL</h3>
+            <p class="card-text">
+              Replacing brittle mainframe scripts with real-time streaming data lakes, robust telemetry, and fault-tolerant data ingestion engines.
+            </p>
+            <ul class="card-tags">
+              <li>Snowflake</li>
+              <li>Databricks</li>
+              <li>Spark</li>
+              <li>dbt</li>
+            </ul>
+            <a href="#auditModal" class="card-link open-modal-btn" data-modal="auditModal">Request Spec <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="capability-card" data-category="ai">
+            <div class="card-icon"><i class="fa-solid fa-sliders"></i></div>
+            <h3 class="card-title">Telemetry, Evaluation & Model Guardrails</h3>
+            <p class="card-text">
+              Setting up automated LLM evaluation suites, prompt injection defenses, model latency telemetry, and drift detection monitors.
+            </p>
+            <ul class="card-tags">
+              <li>Prometheus</li>
+              <li>Grafana</li>
+              <li>Opik</li>
+              <li>OpenTelemetry</li>
+            </ul>
+            <a href="#auditModal" class="card-link open-modal-btn" data-modal="auditModal">Request Spec <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FDE LIFECYCLE / INTERACTIVE PROCESS -->
+    <section class="lifecycle-section" id="lifecycle">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">THE FDE METHODOLOGY</span>
+          <h2 class="section-title">How Forward Deployment Works</h2>
+          <p class="section-lead">
+            From architecture specification to full codebase hand-off in 4 streamlined phases.
+          </p>
+        </div>
+
+        <div class="process-wrapper">
+          <div class="process-steps-nav">
+            <button class="step-nav-btn active" data-step="1">
+              <span class="step-num">01</span>
+              <span class="step-title">Architectural Audit</span>
+            </button>
+            <button class="step-nav-btn" data-step="2">
+              <span class="step-num">02</span>
+              <span class="step-title">Sprint Embedding</span>
+            </button>
+            <button class="step-nav-btn" data-step="3">
+              <span class="step-num">03</span>
+              <span class="step-title">Production Rollout</span>
+            </button>
+            <button class="step-nav-btn" data-step="4">
+              <span class="step-num">04</span>
+              <span class="step-title">Autonomous Hand-off</span>
+            </button>
+          </div>
+
+          <div class="process-content-card glass-panel" id="processContent">
+            <!-- Dynamic Content loaded via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE ROI CALCULATOR -->
+    <section class="calculator-section" id="calculator">
+      <div class="container">
+        <div class="calculator-box glass-panel">
+          <div class="calc-header">
+            <span class="sub-heading">INTERACTIVE ROI ESTIMATOR</span>
+            <h2 class="section-title">Calculate Your Time & Cost Savings</h2>
+            <p>Estimate how NexusFDE accelerates deployment compared to traditional in-house hiring or IT consulting.</p>
+          </div>
+
+          <div class="calc-grid">
+            <div class="calc-controls">
+              <div class="range-group">
+                <div class="range-header">
+                  <label for="integrationsRange">Number of Custom Enterprise Integrations</label>
+                  <span class="range-val" id="integrationsVal">4 Integrations</span>
+                </div>
+                <input type="range" id="integrationsRange" min="1" max="15" value="4" class="slider">
+              </div>
+
+              <div class="range-group">
+                <div class="range-header">
+                  <label for="engineersRange">In-House Dev Team Size</label>
+                  <span class="range-val" id="engineersVal">8 Engineers</span>
+                </div>
+                <input type="range" id="engineersRange" min="2" max="50" value="8" class="slider">
+              </div>
+
+              <div class="range-group">
+                <div class="range-header">
+                  <label for="rateRange">Average In-House Developer Hourly Cost ($)</label>
+                  <span class="range-val" id="rateVal">$95 / hr</span>
+                </div>
+                <input type="range" id="rateRange" min="65" max="180" value="95" step="5" class="slider">
+              </div>
+            </div>
+
+            <div class="calc-results-card">
+              <div class="result-badge"><i class="fa-solid fa-bolt"></i> PROJECTED FDE ACCELERATION</div>
+
+              <div class="result-metric">
+                <div class="result-number" id="timeSaved">14 Days</div>
+                <div class="result-label">FDE Deployment Time (vs 5.5 Months standard)</div>
+              </div>
+
+              <div class="result-divider"></div>
+
+              <div class="result-row">
+                <span>Engineering Hours Saved:</span>
+                <strong id="hoursSaved">1,840 Hours</strong>
+              </div>
+
+              <div class="result-row">
+                <span>Estimated Direct Cost Savings:</span>
+                <strong class="text-glow" id="costSaved">$174,800</strong>
+              </div>
+
+              <div class="result-row">
+                <span>Time-To-Value Speedup:</span>
+                <strong class="text-cyan" id="speedupX">11.8x Faster</strong>
+              </div>
+
+              <button class="btn btn-primary btn-block open-modal-btn" data-modal="auditModal" style="margin-top: 1.5rem;">
+                Get Detailed ROI Breakdown <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FDE VS TRADITIONAL COMPARISON -->
+    <section class="comparison-section" id="comparison">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">WHY FORWARD DEPLOYMENT WINS</span>
+          <h2 class="section-title">Nexus FDE vs. Traditional Options</h2>
+          <p class="section-lead">Stop wasting quarters on bloated consulting proposals or slow internal onboarding.</p>
+        </div>
+
+        <div class="table-responsive glass-panel">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature / Dimension</th>
+                <th class="col-highlight">Nexus FDE Squad</th>
+                <th>Legacy IT Consulting</th>
+                <th>Standard Offshore Vendor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Primary Deliverable</strong></td>
+                <td class="col-highlight"><i class="fa-solid fa-code text-cyan"></i> Production Code & Architecture</td>
+                <td><i class="fa-solid fa-file-powerpoint text-muted"></i> Slide Decks & Specs</td>
+                <td><i class="fa-solid fa-bug text-muted"></i> Low-context Tickets</td>
+              </tr>
+              <tr>
+                <td><strong>Onboarding & Integration</strong></td>
+                <td class="col-highlight"><span class="badge-success">48-72 Hours</span></td>
+                <td>4 - 8 Weeks</td>
+                <td>3 - 6 Weeks</td>
+              </tr>
+              <tr>
+                <td><strong>Repository & Team Embedding</strong></td>
+                <td class="col-highlight"><i class="fa-solid fa-check text-success"></i> Direct PR Submissions & Standups</td>
+                <td><i class="fa-solid fa-xmark text-danger"></i> Hands-off Oversight</td>
+                <td><i class="fa-solid fa-triangle-exclamation text-warning"></i> Isolated Silo</td>
+              </tr>
+              <tr>
+                <td><strong>Security & Air-Gap Readiness</strong></td>
+                <td class="col-highlight"><i class="fa-solid fa-check text-success"></i> SOC2, HIPAA, Air-gapped ISO</td>
+                <td><i class="fa-solid fa-triangle-exclamation text-warning"></i> Variable</td>
+                <td><i class="fa-solid fa-xmark text-danger"></i> Rarely Compliant</td>
+              </tr>
+              <tr>
+                <td><strong>Knowledge Transfer</strong></td>
+                <td class="col-highlight"><i class="fa-solid fa-check text-success"></i> 100% Codebase Ownership & Training</td>
+                <td>Vendor Lock-in Retainer</td>
+                <td>Minimal Documentation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES & SHOWCASE -->
+    <section class="case-studies-section" id="case-studies">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">FIELD PROVEN SUCCESS</span>
+          <h2 class="section-title">Enterprise Case Studies</h2>
+        </div>
+
+        <div class="case-study-hero glass-panel">
+          <div class="case-img-col">
+            <img src="assets/collaboration.jpg" alt="FDE Engineers Collaborating on Enterprise Dashboard" class="case-img">
+            <div class="case-tag-overlay">
+              <i class="fa-solid fa-building-columns"></i> FINTECH ENTERPRISE CASE STUDY
+            </div>
+          </div>
+
+          <div class="case-info-col">
+            <span class="case-client">GLOBAL PAYMENT NETWORKS</span>
+            <h3 class="case-title">Scaling Real-Time Telemetry to 50M Daily Transactions</h3>
+            <p class="case-desc">
+              Nexus FDE embedded 3 senior engineers into Global Payment Networks' infrastructure core. Within 12 days, we engineered an event-driven Kafka telemetry pipeline with 99.999% reliability.
+            </p>
+
+            <div class="case-metrics-row">
+              <div class="case-metric-box">
+                <span class="m-val">12 Days</span>
+                <span class="m-lbl">Lead Time to Prod</span>
+              </div>
+              <div class="case-metric-box">
+                <span class="m-val">50M+</span>
+                <span class="m-lbl">Daily Events Processed</span>
+              </div>
+              <div class="case-metric-box">
+                <span class="m-val">&lt; 8ms</span>
+                <span class="m-lbl">End-to-End Latency</span>
+              </div>
+            </div>
+
+            <div class="testimonial-quote">
+              <p>"Nexus FDE squad came in and wrote cleaner, faster backend code in 2 weeks than our previous vendor did in 9 months. They operate like elite internal staff."</p>
+              <div class="quote-author">
+                <strong>— Marcus Vance</strong>
+                <span>VP of Core Infrastructure, Global Payment Networks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING / ENGAGEMENT MODEL -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">TRANSPARENT ENGAGEMENT TIERS</span>
+          <h2 class="section-title">Select Your FDE Squad Deployment</h2>
+          <p class="section-lead">Flexible, milestone-driven or embedded monthly engagement models.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Tier 1 -->
+          <div class="pricing-card glass-panel">
+            <div class="pricing-header">
+              <h3 class="tier-title">FDE Integration Sprint</h3>
+              <p class="tier-subtitle">Ideal for tactical 2 to 4-week high-impact integration sprints.</p>
+              <div class="tier-price">
+                <span class="price-amount">$18,500</span>
+                <span class="price-period">/ sprint</span>
+              </div>
+            </div>
+
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-check text-cyan"></i> 2 Dedicated Senior Forward Deployed Engineers</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Up to 2 Complex SaaS/AI System Integrations</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Direct PR & Repository Integration</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Automated CI/CD & Testing Pipelines</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> 14-Day Codebase Warranty</li>
+            </ul>
+
+            <button class="btn btn-secondary btn-block open-modal-btn" data-modal="auditModal">Deploy Sprint Squad</button>
+          </div>
+
+          <!-- Tier 2 (Featured) -->
+          <div class="pricing-card glass-panel featured-tier">
+            <div class="featured-badge">MOST POPULAR ENTERPRISE</div>
+            <div class="pricing-header">
+              <h3 class="tier-title">Embedded Enterprise Squad</h3>
+              <p class="tier-subtitle">Full-time embedded FDE squad for ongoing transformation.</p>
+              <div class="tier-price">
+                <span class="price-amount">$34,000</span>
+                <span class="price-period">/ month</span>
+              </div>
+            </div>
+
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-check text-cyan"></i> 4 Principal FDEs + 1 Lead Architect</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Unlimited Integration & RAG Pipeline Engineering</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> 24/7 SLA & Production Incident Support</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> SOC2, HIPAA & Air-Gapped Network Ready</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Daily Standups & Slack/Teams Integration</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Continuous Knowledge Transfer & Workshops</li>
+            </ul>
+
+            <button class="btn btn-glow btn-block open-modal-btn" data-modal="auditModal">Deploy Embedded Squad</button>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="pricing-card glass-panel">
+            <div class="pricing-header">
+              <h3 class="tier-title">Custom Air-Gapped Turnkey</h3>
+              <p class="tier-subtitle">Bespoke architecture for classified or heavily regulated setups.</p>
+              <div class="tier-price">
+                <span class="price-amount">Custom</span>
+                <span class="price-period">/ project</span>
+              </div>
+            </div>
+
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-check text-cyan"></i> Custom On-Prem & Defense Squad Sizing</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> On-site Engineering Deployment Options</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Bespoke Hardware & Edge AI Accelerators</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Dedicated Security Officer & Compliance Audits</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Full Source Code & IP Transfer</li>
+            </ul>
+
+            <button class="btn btn-secondary btn-block open-modal-btn" data-modal="auditModal">Contact Security Team</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">GOT QUESTIONS?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-accordion glass-panel">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the difference between a Forward Deployed Engineer and a traditional contractor?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Traditional contractors work in isolation on assigned tickets. Forward Deployed Engineers (FDEs) operate as hybrid solutions architects and elite systems programmers who embed directly inside your engineering teams, attend standups, submit pull requests directly to your primary codebase, and own end-to-end production outcomes.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How fast can a Nexus FDE squad start working on our codebase?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Because all our FDEs maintain active security background checks, pre-vetted cloud certifications, and standard NDA/IP templates, typical kickoff takes 48 to 72 hours from contract execution.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What security and compliance standards do your FDEs follow?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>All Nexus FDE operations adhere strictly to SOC2 Type II, HIPAA, GDPR, and ISO 27001 standards. We support zero-trust access controls, hardware security keys, ephemeral access tokens, and air-gapped environment work.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Who owns the IP and source code written by FDEs?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>You own 100% of the IP, source code, scripts, and documentation created during the engagement. Everything is committed directly into your repository with clear license headers and comprehensive documentation.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What happens when the FDE engagement concludes?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>During the final phase of every engagement, our FDEs conduct structured technical walkthroughs, record video documentation, publish architectural specs, and mentor your internal engineering team to ensure total independence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-banner glass-panel">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to Accelerate Your Enterprise Integration?</h2>
+            <p class="cta-text">Schedule an engineering audit with a Lead FDE Architect today. We will analyze your architecture and deliver a 14-day deployment roadmap.</p>
+          </div>
+          <div class="cta-action">
+            <button class="btn btn-glow open-modal-btn" data-modal="auditModal">
+              <span>Book FDE Technical Audit</span>
+              <i class="fa-solid fa-calendar-check"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="brand-logo">
+          <div class="logo-icon"><i class="fa-solid fa-terminal"></i></div>
+          <div class="logo-text">
+            <span class="brand-name">NEXUS<span class="gradient-text">//</span>FDE</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          Forward Deployed Engineering solutions for mission-critical software, custom AI pipelines, and enterprise systems integration.
+        </p>
+        <div class="system-status">
+          <span class="status-pulse"></span>
+          <span>ALL CLUSTERS OPERATIONAL — US-EAST / EU-WEST</span>
+        </div>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>Capabilities</h4>
+          <ul>
+            <li><a href="#capabilities">AI & RAG Pipelines</a></li>
+            <li><a href="#capabilities">API & Gateway Mesh</a></li>
+            <li><a href="#capabilities">Kubernetes Scaling</a></li>
+            <li><a href="#capabilities">Zero-Trust Airgap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Methodology</h4>
+          <ul>
+            <li><a href="#lifecycle">Architectural Audit</a></li>
+            <li><a href="#lifecycle">Sprint Embedding</a></li>
+            <li><a href="#calculator">ROI Calculator</a></li>
+            <li><a href="#comparison">FDE vs Consulting</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#pricing">Engagement Tiers</a></li>
+            <li><a href="#faq">Security & SOC2</a></li>
+            <li><a href="#auditModal" class="open-modal-btn" data-modal="auditModal">Contact Engineers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 NexusFDE Inc. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AUDIT BOOKING MODAL -->
+  <div class="modal-overlay" id="auditModal">
+    <div class="modal-card glass-panel">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-badge"><i class="fa-solid fa-code"></i> FDE TECHNICAL AUDIT</div>
+        <h3 class="modal-title">Book an FDE Architectural Session</h3>
+        <p class="modal-subtitle">Meet with a Lead Forward Deployed Engineer to blueprint your enterprise integration.</p>
+      </div>
+
+      <form id="auditForm" class="audit-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" required placeholder="e.g. Sarah Jenkins">
+          </div>
+          <div class="form-group">
+            <label for="workEmail">Work Email *</label>
+            <input type="email" id="workEmail" required placeholder="sarah@company.com">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="companyName">Company / Organization *</label>
+            <input type="text" id="companyName" required placeholder="e.g. Acme Enterprise Cloud">
+          </div>
+          <div class="form-group">
+            <label for="teamSize">Target Timeline</label>
+            <select id="teamSize">
+              <option value="immediate">Immediate (&lt; 2 weeks)</option>
+              <option value="month">Next 30 Days</option>
+              <option value="quarter">Q4 / Future Planning</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="integrationDomain">Primary Integration Goal *</label>
+          <select id="integrationDomain" required>
+            <option value="">Select Domain...</option>
+            <option value="ai">Custom AI / LLM / RAG Pipeline Integration</option>
+            <option value="api">Enterprise API / ERP / CRM Microservice Mesh</option>
+            <option value="cloud">Cloud Migration & Kubernetes Modernization</option>
+            <option value="security">Air-gapped Zero-Trust Security Compliance</option>
+            <option value="other">Other Bespoke Systems Challenge</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="projectDetails">Brief Technical Scope / Requirements</label>
+          <textarea id="projectDetails" rows="3" placeholder="Describe your current tech stack, pain points, or target milestone..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-glow btn-block">
+          <span>Request FDE Audit & Roadmap</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+
+      <!-- Form Submission Success Message -->
+      <div class="form-success-state" id="formSuccess" style="display: none;">
+        <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h3>Audit Request Received!</h3>
+        <p>A Lead Forward Deployed Engineer has been assigned. We will send a calendar invite and preliminary technical questionnaire to your email within 2 hours.</p>
+        <div class="ticket-box">
+          <span>Reference Ticket ID:</span>
+          <strong id="ticketId">#FDE-89241-NEXUS</strong>
+        </div>
+        <button class="btn btn-secondary" id="modalResetBtn">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
